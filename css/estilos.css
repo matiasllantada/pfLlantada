@@ -124,4 +124,20 @@ footer div ul a {
   text-align: center;
 }
 
+#autos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#autos div {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+}
+#autos div img {
+  width: 50%;
+  border-radius: 1rem;
+}
+
 /*# sourceMappingURL=estilos.css.map */
