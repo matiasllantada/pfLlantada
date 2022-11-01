@@ -67,7 +67,7 @@ footer {
         align-items: center;
 
         p {
-            width: 50%;
+            width: 40%;
             margin: 1rem auto 1rem 8%;
         }
 
@@ -107,4 +107,38 @@ footer {
         width: 100%;
     }
     margin-bottom: auto;
+}
+
+#catalogo {
+    div {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 4rem;
+        align-items: center;
+
+        img {
+            width: 100%;
+        }
+
+        p {
+            font-size: 3rem;
+            margin-top: 0.5rem;
+        }
+
+        a {
+            font-size: 2rem;
+            border: solid 0.2rem;
+            border-radius: 0.5rem;
+            color: white;
+            background-color: blue;
+            border-color: darkblue;
+            text-decoration: none;
+            margin-top: 0.5rem;
+            width: 9rem;
+            text-align: center;
+        }
+    }
 }
