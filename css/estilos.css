@@ -140,4 +140,22 @@ footer div ul a {
   border-radius: 1rem;
 }
 
+#nosotros {
+  width: 80%;
+  margin: auto;
+}
+#nosotros div {
+  display: flex;
+}
+#nosotros div img {
+  width: 40%;
+  margin: auto;
+  border-radius: 1rem;
+}
+#nosotros div p {
+  max-width: 80%;
+  margin-top: 3rem;
+  align-self: center;
+}
+
 /*# sourceMappingURL=estilos.css.map */
