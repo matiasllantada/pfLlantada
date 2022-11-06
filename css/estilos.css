@@ -174,4 +174,50 @@ footer div ul a {
   padding: 0.5rem;
 }
 
+#contacto div {
+  width: 80%;
+  margin: auto;
+}
+#contacto div p {
+  margin: 3rem 0;
+  font-size: 2rem;
+}
+#contacto div iframe {
+  border-radius: 1rem;
+  width: 100%;
+}
+#contacto .formulario {
+  background-color: aqua;
+  border: solid 0.15rem;
+  border-radius: 0.5rem;
+  margin-bottom: 3rem;
+}
+#contacto .formulario form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+#contacto .formulario form .etiquetas {
+  font-size: 2rem;
+  margin-top: 2%;
+}
+#contacto .formulario form .texto {
+  width: 60%;
+  margin-top: 2%;
+}
+#contacto .formulario form textarea {
+  width: 60%;
+  margin-top: 2%;
+}
+#contacto .formulario form .enviar {
+  width: 15%;
+  margin: 5% 0;
+  color: white;
+  background-color: blue;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+}
+
 /*# sourceMappingURL=estilos.css.map */
