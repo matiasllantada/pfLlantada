@@ -8,7 +8,7 @@ html {
 }
 
 #container {
-  max-width: 1200px;
+  max-width: 1500px;
   width: 100%;
   margin: auto;
   min-height: 100vh;
@@ -31,6 +31,7 @@ header nav div {
 header nav div img {
   height: 10rem;
   width: 100%;
+  max-width: 30rem;
 }
 header nav div ul {
   list-style: none;
@@ -284,6 +285,25 @@ footer div ul a {
   }
   #nosotros a {
     margin-top: 3rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #catalogo {
+    display: flex;
+    margin-bottom: auto;
+  }
+  #catalogo div {
+    width: 40%;
+    margin-top: 10rem;
+  }
+  #catalogo div img {
+    height: 30rem;
+  }
+  #autos {
+    flex-wrap: nowrap;
+  }
+  #autos .card {
+    max-width: 23%;
   }
 }
 
