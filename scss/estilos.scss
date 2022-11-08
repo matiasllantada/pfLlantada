@@ -24,20 +24,24 @@ header {
         width: 100%;
         display: flex;
 
-        div {
+        .logo-marca {
             width: 50%;
-            position: relative;
+            margin-right: auto;
 
             img {
                 height: 10rem;
                 width: 100%;
                 max-width: 30rem;
             }
+        }
+
+        .navegador {
+            width: 20%;
 
             ul {
                 list-style: none;
-                position: absolute;
-                right: 15%;
+                display: flex;
+                flex-direction: column;
 
                 a {
                     display: inline-block;
@@ -113,6 +117,8 @@ footer {
 }
 
 #catalogo {
+    margin-bottom: auto;
+
     div {
         box-sizing: border-box;
         display: flex;
@@ -224,6 +230,7 @@ footer {
             color: white;
             background-color: blue;
             width: 40%;
+            max-width: 20rem;
             text-align: center;
             font-size: 1.2rem;
             border-radius: 0.5rem;
@@ -279,6 +286,7 @@ footer {
 
             .enviar {
                 width: 15%;
+                min-width: 8rem;
                 margin: 5% 0;
                 color: white;
                 background-color: blue;
@@ -291,7 +299,30 @@ footer {
 }
 
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+
+    header {
+
+        nav {
+
+            .logo-marca {
+                margin: auto;
+            }
+
+            .navegador {
+                width: 50%;
+                
+                ul {
+
+                    height: 12rem;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
 
     #inicio {
         margin-top: 7rem;
@@ -343,7 +374,7 @@ footer {
     }
 }
 
-@media only screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
 
     #catalogo {
         display: flex;
@@ -360,10 +391,43 @@ footer {
     }
 
     #autos {
-        
+
         flex-wrap: nowrap;
+
         .card {
             max-width: 23%;
+        }
+    }
+
+    #contacto {
+
+        display: flex;
+        margin-bottom: auto;
+
+        div {
+            width: 40%;
+        }
+
+        .formulario {
+            margin-top: 3rem;
+            height: 50rem;
+
+            form {
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                .etiquetas {
+                    width: 20%;
+                    margin-left: 5rem;
+                    padding: 0.5rem;
+                }
+
+                .texto {
+                    width: 50%;
+                    margin-right: 5rem;
+                    padding: 0.5rem;
+                }
+            }
         }
     }
 }

@@ -24,21 +24,24 @@ header nav {
   width: 100%;
   display: flex;
 }
-header nav div {
+header nav .logo-marca {
   width: 50%;
-  position: relative;
+  margin-right: auto;
 }
-header nav div img {
+header nav .logo-marca img {
   height: 10rem;
   width: 100%;
   max-width: 30rem;
 }
-header nav div ul {
-  list-style: none;
-  position: absolute;
-  right: 15%;
+header nav .navegador {
+  width: 20%;
 }
-header nav div ul a {
+header nav .navegador ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+header nav .navegador ul a {
   display: inline-block;
   text-decoration: none;
   color: white;
@@ -96,6 +99,9 @@ footer div ul a {
   width: 100%;
 }
 
+#catalogo {
+  margin-bottom: auto;
+}
 #catalogo div {
   box-sizing: border-box;
   display: flex;
@@ -195,6 +201,7 @@ footer div ul a {
   color: white;
   background-color: blue;
   width: 40%;
+  max-width: 20rem;
   text-align: center;
   font-size: 1.2rem;
   border-radius: 0.5rem;
@@ -241,6 +248,7 @@ footer div ul a {
 }
 #contacto .formulario form .enviar {
   width: 15%;
+  min-width: 8rem;
   margin: 5% 0;
   color: white;
   background-color: blue;
@@ -248,7 +256,19 @@ footer div ul a {
   font-size: 1.5rem;
 }
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  header nav .logo-marca {
+    margin: auto;
+  }
+  header nav .navegador {
+    width: 50%;
+  }
+  header nav .navegador ul {
+    height: 12rem;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
   #inicio {
     margin-top: 7rem;
     display: flex;
@@ -287,7 +307,7 @@ footer div ul a {
     margin-top: 3rem;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   #catalogo {
     display: flex;
     margin-bottom: auto;
@@ -304,6 +324,31 @@ footer div ul a {
   }
   #autos .card {
     max-width: 23%;
+  }
+  #contacto {
+    display: flex;
+    margin-bottom: auto;
+  }
+  #contacto div {
+    width: 40%;
+  }
+  #contacto .formulario {
+    margin-top: 3rem;
+    height: 50rem;
+  }
+  #contacto .formulario form {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #contacto .formulario form .etiquetas {
+    width: 20%;
+    margin-left: 5rem;
+    padding: 0.5rem;
+  }
+  #contacto .formulario form .texto {
+    width: 50%;
+    margin-right: 5rem;
+    padding: 0.5rem;
   }
 }
 
