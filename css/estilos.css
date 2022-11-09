@@ -13,6 +13,7 @@ html {
   margin: auto;
   min-height: 100vh;
   background-color: gray;
+  font-family: "M PLUS Rounded 1c", sans-serif;
   display: flex;
   flex-direction: column;
 }
@@ -48,9 +49,20 @@ header nav .navegador ul a {
   padding: 0.5rem;
   font-size: 1.5rem;
 }
+header nav .navegador .submenu > li > a {
+  display: block;
+}
+header nav .navegador .submenu {
+  position: absolute;
+  display: none;
+}
+header nav .navegador .menu li:hover .submenu {
+  display: block;
+}
 
 hero {
   text-align: center;
+  font-family: "Norican", cursive;
   display: block;
   margin: 7rem;
   font-size: 3rem;
@@ -69,19 +81,22 @@ footer div p {
   width: 40%;
   margin: 1rem auto 1rem 8%;
 }
-footer div ul {
+footer div .redes {
   list-style: none;
   width: 50%;
   margin-right: 10%;
   display: flex;
   justify-content: flex-end;
 }
-footer div ul li {
+footer div .redes li {
   margin: 0 1rem;
 }
-footer div ul a {
+footer div .redes a {
   text-decoration: none;
   color: white;
+}
+footer div .redes img {
+  width: 25px;
 }
 
 #inicio {
@@ -250,6 +265,7 @@ footer div ul a {
   width: 15%;
   min-width: 8rem;
   margin: 5% 0;
+  padding: 0.5rem 4rem;
   color: white;
   background-color: blue;
   border-radius: 0.5rem;

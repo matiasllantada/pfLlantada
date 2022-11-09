@@ -13,6 +13,7 @@ html {
     margin: auto;
     min-height: 100vh;
     background-color: gray;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     display: flex;
     flex-direction: column;
 }
@@ -51,12 +52,33 @@ header {
                     font-size: 1.5rem;
                 }
             }
+
+            .submenu>li>a {
+                display: block;
+            }
+
+            .submenu {
+                position: absolute;
+                display: none;
+            }
+
+            .menu {
+
+                li:hover {
+
+                    .submenu {
+
+                        display: block;
+                    }
+                }
+            }
         }
     }
 }
 
 hero {
     text-align: center;
+    font-family: 'Norican', cursive;
     display: block;
     margin: 7rem;
     font-size: 3rem;
@@ -76,7 +98,7 @@ footer {
             margin: 1rem auto 1rem 8%;
         }
 
-        ul {
+        .redes {
             list-style: none;
             width: 50%;
             margin-right: 10%;
@@ -91,6 +113,12 @@ footer {
                 text-decoration: none;
                 color: white;
             }
+
+            img {
+                width: 25px;
+            }
+
+
         }
     }
 
@@ -288,6 +316,7 @@ footer {
                 width: 15%;
                 min-width: 8rem;
                 margin: 5% 0;
+                padding: 0.5rem 4rem;
                 color: white;
                 background-color: blue;
                 border-radius: 0.5rem;
@@ -311,7 +340,7 @@ footer {
 
             .navegador {
                 width: 50%;
-                
+
                 ul {
 
                     height: 12rem;
